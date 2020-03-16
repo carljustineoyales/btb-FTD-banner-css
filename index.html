@@ -20,7 +20,7 @@
 	// ]]></script>
 	<title>SMF Config Notes</title>
 	<link rel="stylesheet" type="text/css" href="https://bitcointalk.org/Themes/custom1/style.css" />
-	<!-- <link rel="stylesheet" href="main.css"> -->
+	<link rel="stylesheet" href="main.css">
 	 <!--[if !IE]> -->
 	 <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 320px) and (max-device-width: 650px)" href="https://bitcointalk.org/Themes/custom1/mobile.css" />
 	 <!-- <![endif]-->
@@ -55,265 +55,6 @@
   AD CSS HERE
   Do not conflict with page CSS. You can't say "a {color:red}", for example.
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-.banner {
-  background: url("./assets/bg_light.jpg");
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  overflow: hidden;
-  max-height: 42px;
-  height: 42px;
-  margin: auto;
-  width: 728px;
-  position: relative;
-}
-
-.banner__logo {
-  background: url("./assets/btb88_Logo_RGB-01.svg") no-repeat;
-  width: 88px;
-  height: 100%;
-  position: absolute;
-  top: 0%;
-  left: 88%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.banner__header {
-  opacity: 1;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
-}
-
-.banner__list {
-  opacity: 0;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.banner__list a {
-  text-decoration: none;
-}
-
-.banner__items {
-  text-decoration: none;
-}
-
-.banner__items--middle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.banner__items--button {
-  outline: none;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 2px;
-  background-color: orangered;
-  color: white;
-  text-decoration: none;
-}
-
-.banner__items_container {
-  width: 50%;
-  text-align: left;
-}
-
-.banner__items_header {
-  color: white;
-  font-size: 10px;
-}
-
-.banner__items_subheader {
-  color: yellow;
-  font-weight: 700;
-}
-
-.banner__items:nth-child(2) {
-  width: 60%;
-}
-
-.banner__items:nth-child(1), .banner__items:nth-child(3), .banner__items:nth-child(4) {
-  width: 100px;
-}
-
-.header__header {
-  width: 100%;
-  color: white;
-  font-size: 12px;
-}
-
-.header__header--show {
-  -webkit-animation: hide 3s infinite ease-in-out;
-          animation: hide 3s infinite ease-in-out;
-}
-
-.header__header--hidden {
-  font-size: 26px;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: 1s ease-in;
-  transition: 1s ease-in;
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
-  -webkit-animation: show 3s infinite ease-in-out;
-          animation: show 3s infinite ease-in-out;
-}
-
-.header__header--yellow {
-  color: yellow;
-}
-
-.header__subheader {
-  color: yellow;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-
-.header__subheader--show {
-  -webkit-animation: hide 3s infinite ease-in-out;
-          animation: hide 3s infinite ease-in-out;
-}
-
-/*
-*
-*
-*Hover Effects
-*
-***/
-.banner:hover .banner__logo {
-  left: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.banner:hover .banner__list {
-  opacity: 1;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
-}
-
-.banner:hover .banner__header {
-  opacity: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-/*
-*
-*
-*Animation
-*
-**/
-@-webkit-keyframes hide {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes hide {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes show {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes show {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-/*# sourceMappingURL=main.css.map */
-
-
 
 
 
@@ -687,21 +428,49 @@
 
 
 						<div class="banner">
-							<div class="banner__logo"></div>
-							<div class="banner__header">
-								
-									<div class="header__header header__header--show">Get 100% First Time Deposit Match Bonus</div>
-									<div class="header__subheader header__subheader--show">Up To 50mBTC</div>
-								
-								<div class="header__header header__header--hidden">Safe & <span class="header__header--yellow">Secure</span> Licensed & <span class="header__header--yellow">Regulated</span></div>
+							<div class="banner__header banner__header--show">
+								<div class="banner__text">
+									Get 100% First Time Deposit Match Bonus <span class="banner__highlight">Up To 50mBTC</span>
+								</div>
+							<div class="banner__img">
+								<img src="./assets/Logo.png" width="160px" class="img__logo"/>
+								<img src="./assets/BonusWheel.png" alt="" width="80px" class="img__wheel"/>
+								<img src="./assets/coins.png" alt="" width="240px" class="img__coins"/>
 							</div>
-							<div class="banner__list">
-								<a href="#" class="banner__items"></a>
-								<a href="#" class="banner__items banner__items--middle"><img src="./assets/Logo.png" alt="" width="200px"> <span class="banner__items_container"><span class="banner__items_header">Get 100% First Time Deposit Match Bonus</span><br/><span class="banner__items_subheader">Up To 50mBTC</span></a>
-								<a href="#" class="banner__items"><button class="banner__items--button">Buy Now</button></a>
-								<a href="#" class="banner__items"><img src="./assets/18+ Play Responsibly.svg" alt="" width="88px"></a>
+							<div class="banner__logo--placeholder">
 							</div>
+						</div>
+						<div class="banner__header banner__header--hide">
+							<div class="banner__img">
+								<img src="./assets/coins.png" alt="" width="240px" class="img__coins"/>
 							</div>
+							<div class="banner__text">
+								<span class="banner__highlight">Safe & Secure</span> | Licensed & Regulated | <span class="banner__highlight">Certified Fair Games</span> | Fast Payouts
+							</div>
+							<div class="banner__logo--placeholder">
+							</div>
+						</div>
+						<div class="banner__logo">
+							<img src="./assets/btb88_Logo_RGB-01.svg" width="86px"/>
+						</div>
+
+						<div class="banner__sections">
+							<div class="sections__logo--placeholder">
+							</div>
+							<div class="sections__text">
+								<span class="sections__header sections__top">Get 100% First Time Deposit Match Bonus <span class="sections__highlight sections__highlight--blinking">Up To 50mBTC</span></span><br/><span class="sections__bottom"><span class="sections__highlight">Safe & Secure</span> | <span class="sections__highlight">Licensed & Regulated</span> | <span class="sections__highlight">Certified Fair Games</span> | <span class="sections__highlight">Fast Payouts</span></span>
+							</div>
+							<div class="sections__img">
+								<img src="./assets/Logo.png" width="160px" class="img__logo"/>
+								<img src="./assets/BonusWheel.png" alt="" width="80px" class="img__wheel"/>
+								<img src="./assets/coins.png" alt="" width="240px" class="img__coins"/>
+							</div>
+							<div class="sections__button">
+								<button>BET NOW</button>
+								<img src="./assets/18+ Play Responsibly.svg" alt="" width="60px">
+							</div>
+						</div>
+						</div>
 						
 
 
